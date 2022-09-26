@@ -1,0 +1,46 @@
+## apache配置默认站点
+
+1.让apache确定服务器上访问的位置： 网站文件夹所在位置
+
+2.方便用户使用名字访问对应的网站： 给文件夹对应的取一个别名
+
+## 安装php
+
+解压缩后添加环境变量
+
+## Apache加载php
+
+1apache加载php模块，在apache的住配置文件中加载对应的php提供的模块 httpd.conf文件
+
+``` conf
+#加载php5
+#LoadModule php5_module '‪E:/php/php-5.6.13/php5apache2_4.dll'
+#将php配置文件加载到apache配置文件中
+#PHPIniDir 'E:/php/php-5.6.13'
+#分配给php
+AddType application/x-httpd-php .php
+```
+
+
+
+![image-20220904225152988](https://zhuzedan.oss-cn-hangzhou.aliyuncs.com/img/image-20220904225152988.png)
+
+## php加载mysql扩展
+
+1.打开php.ini文件
+
+![image-20220904212044524](https://zhuzedan.oss-cn-hangzhou.aliyuncs.com/img/image-20220904212044524.png)
+
+把mysqldll的分号去掉
+
+2.php中所有的扩展都在ext文件中，需要制定扩展所在路径
+
+![image-20220904212640981](https://zhuzedan.oss-cn-hangzhou.aliyuncs.com/img/image-20220904212640981.png)
+
+3.php.ini已经被apache加载，重启apache才会生效
+
+
+
+补充：设定php系统时区
+
+![image-20220904212914757](https://zhuzedan.oss-cn-hangzhou.aliyuncs.com/img/image-20220904212914757.png)
