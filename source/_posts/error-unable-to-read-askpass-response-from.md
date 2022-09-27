@@ -1,7 +1,7 @@
 ---
 title: 'error: unable to read askpass response from '' '
 date: 2022-09-20 12:46:30
-tags:
+tags: git
 ---
 ### error: unable to read askpass response from '' 
 

@@ -1,7 +1,8 @@
 ---
 title: 'Failed to connect to github.com port 443 after 21092 ms: Timed out解决 '
 date: 2022-09-26 12:46:30
-tags:
+tags: git
+cover: https://zhuzedan.oss-cn-hangzhou.aliyuncs.com/img/wallpaper3.jpg
 ---
 Failed to connect to github.com port 443 after 21092 ms: Timed out解决
 

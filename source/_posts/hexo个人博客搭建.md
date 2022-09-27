@@ -1,3 +1,10 @@
+---
+title: 'hexo个人博客搭建，保姆级教学 '
+date: 2022-09-20 11:46:30
+tags: hexo
+sticky: 1
+cover: https://zhuzedan.oss-cn-hangzhou.aliyuncs.com/img/wallpaper4.png
+---
 hexo个人博客搭建，保姆级教学
 
 ### 前期准备
