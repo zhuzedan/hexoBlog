@@ -2381,6 +2381,13 @@
     "moment" "^2.18.0"
     "nunjucks" "^3.2.1"
 
+"hexo-filter-gitcalendar@^1.0.9":
+  "integrity" "sha512-BoA8LYt6PmxksKgDwkvJvHyOjgBdTdwI5Bcluw43N5q/sVHF+d7j0Y+i7Aq54hK5tHMoOUrYBmB5Bkt8nSQ/TQ=="
+  "resolved" "https://registry.npmjs.org/hexo-filter-gitcalendar/-/hexo-filter-gitcalendar-1.0.9.tgz"
+  "version" "1.0.9"
+  dependencies:
+    "pug" "^3.0.0"
+
 "hexo-front-matter@^0.2.2":
   "integrity" "sha512-GL/pGfYqsvjMgxjhOWv1zAc7t4JoGUow+CH9Tes/5N2wKxxTzt2woKEMHz1+c01CmhdVYUR4lO3R1ZAcxc0caA=="
   "resolved" "https://registry.npmjs.org/hexo-front-matter/-/hexo-front-matter-0.2.3.tgz"
@@ -4228,7 +4235,7 @@
   "resolved" "https://registry.npmjs.org/pug-walk/-/pug-walk-2.0.0.tgz"
   "version" "2.0.0"
 
-"pug@^3.0.2":
+"pug@^3.0.0", "pug@^3.0.2":
   "integrity" "sha512-bp0I/hiK1D1vChHh6EfDxtndHji55XP/ZJKwsRqrz6lRia6ZC2OZbdAymlxdVFwd1L70ebrVJw4/eZ79skrIaw=="
   "resolved" "https://registry.npmjs.org/pug/-/pug-3.0.2.tgz"
   "version" "3.0.2"
