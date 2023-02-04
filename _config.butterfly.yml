@@ -35,6 +35,7 @@ copy:
 social:
   fab fa-github: https://github.com/zhuzedan || Github
   fas fa-envelope: mailto:1031155817@qq.com || Email
+  fa-brands fa-weixin: https://zhuzedan.oss-cn-hangzhou.aliyuncs.com/img/wechat.jpg || wechat
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
@@ -120,7 +121,7 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
-  default_cover: https://fastly.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png
+  default_cover: https://zhuzedan.oss-cn-hangzhou.aliyuncs.com/img/wallpaper8.png
   # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
@@ -418,10 +419,10 @@ messenger:
 # --------------------------------------
 footer:
   owner:
-    enable: true
+    enable: false
     since: 2022
-  custom_text: Hi,welcome to my blog
-  copyright: true # Copyright of theme and framework
+  custom_text: ''
+  copyright: false # Copyright of theme and framework
 
 # Analysis
 # --------------------------------------
@@ -512,7 +513,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://zhuzedan.oss-cn-hangzhou.aliyuncs.com/img/wallpaper1.png)
+background: url(https://zhuzedan.oss-cn-hangzhou.aliyuncs.com/img/wallpaper11.jpg)
 
 # Footer Background
 footer_bg: false
@@ -617,23 +618,28 @@ hr_icon:
 # the subtitle on homepage (主頁subtitle)
 subtitle:
   enable: true
-  # Typewriter Effect (打字效果)
+  # Typewriter Effect (开启打字效果)
   effect: true
-  # Effect Speed Options (打字效果速度參數)
-  startDelay: 300 # time before typing starts in milliseconds
-  typeSpeed: 150 # type speed in milliseconds
-  backSpeed: 50 # backspacing speed in milliseconds
   # loop (循環打字)
   loop: true
-  # source 調用第三方服務
+  # source調用第三方服務
   # source: false 關閉調用
-  # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
-  # source: 2  調用一句網（簡體） http://yijuzhan.com/
-  # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
+  # source: 1  調用搏天api的隨機語錄（簡體）
+  # source: 2  調用一言網的一句話（簡體）
+  # source: 3  調用一句網（簡體）
+  # source: 4  調用今日詩詞（簡體）
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: 1
-  # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
-  sub: There is no royal road to There is no end for learning. suffering for the boat.
+  source: false
+  # 如果有英文逗号' , ',请使用转义字元 &#44;
+  # 如果有英文双引号' " ',请使用转义字元 &quot;
+  # 开头不允許转义字元，如需要，请把整個句子用双引号包住
+  # 如果关闭打字效果，subtitle只会现示sub的第一行文字
+  sub:
+    - 你在抱怨什么呢
+    - 为明天到来的事，说人生像是没有意义
+    - 没有选择会是唯一的路
+    - 这不是你自己的问题，人终归要好好去生活
+
 
 # Loading Animation (加載動畫)
 preloader: false
@@ -857,6 +863,7 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
+    - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
   bottom:
   # - <script src="xxxx"></script>
 

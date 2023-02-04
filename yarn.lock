@@ -2353,6 +2353,13 @@
     "serve-static" "^1.4.0"
     "write-good" "^0.10.0"
 
+"hexo-butterfly-footer-beautify@^1.0.6":
+  "integrity" "sha512-zGA0b1BgL0CTmh3mKOvSh5TY6o3HW8tt/Xnhr+8g+I0MrzDcaBUXx9Ci2jyZRIctgFHS/0pcWd/Ro0Db2py42w=="
+  "resolved" "https://registry.npmmirror.com/hexo-butterfly-footer-beautify/-/hexo-butterfly-footer-beautify-1.0.6.tgz"
+  "version" "1.0.6"
+  dependencies:
+    "pug" "^3.0.0"
+
 "hexo-cli@^4.3.0":
   "integrity" "sha512-lr46h1tK1RNQJAQZbzKYAWGsmqF5DLrW6xKEakqv/o9JqgdeempBjIm7HqjcZEUBpWij4EO65X6YJiDmT9LR7g=="
   "resolved" "https://registry.npmmirror.com/hexo-cli/-/hexo-cli-4.3.0.tgz"
